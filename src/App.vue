@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/m_logo2.png">
+    <Music/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Music from './components/Music.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Music
   }
 }
 </script>
@@ -24,5 +24,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+ 
+  
 }
+img { margin-top:-3% ;
+      width: 18%;
+          }
+html{  background-image: url('./assets/bk1.jpg');}
 </style>
