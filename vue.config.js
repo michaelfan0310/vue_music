@@ -3,6 +3,9 @@
 //   transpileDependencies: true
 // })
 
+// module.exports = {
+//   publicPath: process.env.NODE_ENV === 'production' ? '/subfolder/' : '/',
+// };
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/subfolder/' : '/',
+  publicPath:  './',
 };
