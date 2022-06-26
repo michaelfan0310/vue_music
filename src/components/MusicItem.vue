@@ -10,62 +10,62 @@
 <div class="container">
 
        
-       <Category title="Symphony" >
+       <category-item title="Symphony" >
 			<iframe src="https://www.youtube.com/embed/qVA1ieo9Js4" title="YouTube video player" 
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</Category>		
+		</category-item>		
 
-        <Category title="Piano">
+        <category-item title="Piano">
 			<iframe   src="https://www.youtube.com/embed/XMJbOC_2DME"   title="YouTube video player"
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
             picture-in-picture" allowfullscreen></iframe>
-		</Category>
+		</category-item>
 
-		<Category title="Movie">
+		<category-item title="Movie">
 			<iframe src="https://www.youtube.com/embed/0iKyAK6BVuM" title="YouTube video player" 
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</Category>
+		</category-item>
 
-        <Category title="Singing">
+        <category-item title="Singing">
 			<iframe src="https://www.youtube.com/embed/cKWreZDK9es" title="YouTube video player" 
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</Category>
-<Category title="BackGround">
+		</category-item>
+<category-item title="BackGround">
         <iframe src="https://www.youtube.com/embed/hlWiI4xVXKY" title="YouTube video player" 
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
         gyroscope; picture-in-picture" allowfullscreen></iframe>
-</Category>
-        <Category title="Study">
+</category-item>
+        <category-item title="Study">
         <iframe src="https://www.youtube.com/embed/9F880xaDVEY"   title="YouTube video player" 
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </Category>
+        </category-item>
 
 
-    <Category title="Special">
+    <category-item title="Special">
         <iframe src="https://www.youtube.com/embed/FS6o3qFimsc" title="YouTube video player" 
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
         gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </Category>
+    </category-item>
         
- <Category title="Sonata" >
+ <category-item title="Sonata" >
 			<ul class="sonata">
 				<li v-for="(s,index) in sonatas" :key="index">{{s}}</li>
 			</ul>
-	</Category>
+	</category-item>
 
 </div>
   </div>
 </template>
 
 <script>
-import Category from './Category'
+import CategoryItem from './CategoryItem'
 export default {
-    name:'music',
-    components:{Category},
+    name:'MusicItem',
+    components:{CategoryItem},
     data() {
 			return {				
 				sonatas:['Mozart: Allegro','Beethoven "Moonlight" Sonata','Chopin: Sonata No.3','J.S. Bach'],

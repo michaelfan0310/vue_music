@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/m_logo2.png">
-    <Music/>
+    <MusicItem />
   </div>
 </template>
 
 <script>
-import Music from './components/Music.vue'
+import MusicItem from './components/MusicItem.vue'
 
 export default {
   name: 'App',
   components: {
-    Music
+    MusicItem
   }
 }
 </script>

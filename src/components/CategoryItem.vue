@@ -1,5 +1,5 @@
 <template>
-	<div class="category">
+	<div class="categoryItem">
 		<h3>{{title}}</h3>
 		<!-- 定义一个插槽（挖个坑，等着组件的使用者进行填充） -->
 		<slot>我是一些默认值，当使用者没有传递具体结构时，我会出现</slot>
@@ -8,13 +8,14 @@
 
 <script>
 	export default {
-		name:'Category',
+		name:'categoryItem',
+		
 		props:['title']
 	}
 </script>
 
 <style scoped>
-	.category{
+	.categoryItem{
 		border-radius: 12px;
 		background-color: skyblue;
 		width: 30%;
