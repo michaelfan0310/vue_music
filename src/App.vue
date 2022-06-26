@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/m_logo2.png">
+    <img alt="Vue logo" src="./images/m_logo.png">
     <MusicItem />
   </div>
 </template>
@@ -29,5 +29,5 @@ export default {
 img { margin-top:-3% ;
       width: 18%;
           }
-html{  background-image: url('./assets/bk1.jpg');}
+html{  background-image: url('./images/bk1.jpg');}
 </style>
