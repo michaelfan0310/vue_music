@@ -91,16 +91,16 @@ export default {
 
 <style scoped>
     li {
-        text-align: center; 
+        text-align: left; 
         display: list-item;
         font-size: 1.3rem; 
-        /* float: left         */
+        float: left;
+        width: 15%;        
         }
-    /* li span{
+    li span{
         position: relative;
-        left: 5px; 
-        
-    } */
+        left: 2px;         
+    }
         
 
     .container{
