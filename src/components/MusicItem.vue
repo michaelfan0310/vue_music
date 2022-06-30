@@ -2,7 +2,7 @@
   <div>
       <h1>My Favorite Album</h1>
       <ul class="list">
-            <li v-for="(c,index) in collections" :key="index">{{c}}</li>           
+            <li v-for="(c,index) in collections" :key="index"><span>{{c}}</span></li>           
       </ul>
       <input type="text" v-model="newCollect"/>
       <button @click="addNew">add new</button>
@@ -33,27 +33,35 @@
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</category-item>
-<category-item title="BackGround">
-        <iframe src="https://www.youtube.com/embed/hlWiI4xVXKY" title="YouTube video player" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-        gyroscope; picture-in-picture" allowfullscreen></iframe>
-</category-item>
+
+        <category-item title="BackGround">
+            <iframe src="https://www.youtube.com/embed/hlWiI4xVXKY" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </category-item>
+
         <category-item title="Study">
-        <iframe src="https://www.youtube.com/embed/9F880xaDVEY"   title="YouTube video player" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/9F880xaDVEY"   title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </category-item>
 
 
     <category-item title="Special">
         <iframe src="https://www.youtube.com/embed/FS6o3qFimsc" title="YouTube video player" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-        gyroscope; picture-in-picture" allowfullscreen></iframe>
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </category-item>
+
+    <category-item title="Piano2">
+        <iframe src="https://www.youtube.com/embed/MuxB2zACza0" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </category-item>
         
- <category-item title="Sonata" >
-			<ul class="sonata">
-				<li v-for="(s,index) in sonatas" :key="index">{{s}}</li>
+    <category-item title="Sonata" >
+			<ul class="sonata" >
+				<li v-for="(s,index) in sonatas" :key="index"> {{ s }} </li>
 			</ul>
 	</category-item>
 
@@ -82,11 +90,18 @@ export default {
 </script>
 
 <style scoped>
-    li {text-align: center; 
+    li {
+        text-align: center; 
         display: list-item;
-        font-size: 1.3rem;
-         
+        font-size: 1.3rem; 
+        /* float: left         */
         }
+    /* li span{
+        position: relative;
+        left: 5px; 
+        
+    } */
+        
 
     .container{
 		display: flex;
@@ -105,10 +120,10 @@ export default {
 
    h1,li {
         color: rgb(142, 139, 135);
+        
     }
-    /* .list{
-        justify-content: center; 
-       
-    } */
+
+    /* h1 {margin-top: -7%;} */
+ 
 
 </style>

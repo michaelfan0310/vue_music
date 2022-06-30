@@ -23,10 +23,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
-  
+  margin-top: 60px;  
 }
-img { margin-top:-3% ;
+img { 
+  margin-top:-2%;
+      /* margin-left: -50%; */
       width: 18%;
           }
 html{  background-image: url('./images/bk1.jpg');}
