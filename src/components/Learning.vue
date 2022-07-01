@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<h3>Week-Learning</h3>
-    <div class="container">   
+    <div class="container2">   
 
 	<category-item title="Special">
         <iframe src="https://www.youtube.com/embed/gyMwXuJrbJQ" title="YouTube video player" 
@@ -36,12 +36,12 @@
 	}
         
 
-    .container{
+    .container2{
 		display: flex;
         flex-direction: row;
 		justify-content: space-around;
         flex-flow: row wrap;
-        margin-top: -16%;
+        margin-top: -11%;
 	}
     iframe{
         width:99%;

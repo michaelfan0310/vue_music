@@ -6,7 +6,7 @@
 
 <div class="row">
       <div class="col-xs-2 col-xs-offset-2">
-        <div >
+        <div>
 					<!-- 原始html中我们使用a标签实现页面的跳转 -->
           <!-- <a class="list-group-item active" href="./about.html">About</a> -->
           <!-- <a class="list-group-item" href="./home.html">Home</a> -->
@@ -67,7 +67,9 @@ img {
 
 .list-group{
   margin-right: 75%;
+ 
   color: skyblue;
+  /* font-size: 1.5rem; */
   margin-left: 5%;
 }
 html{  background-image: url('./images/bk1.jpg');}
