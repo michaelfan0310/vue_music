@@ -61,7 +61,7 @@
         
     <category-item title="Sonata" >
 			<ul class="sonata" >
-				<li v-for="(s,index) in sonatas" :key="index"> {{ s }} </li>
+				<li v-for="(s,index) in sonatas" :key="index"><span>{{ s }} </span> </li>
 			</ul>
 	</category-item>
 
@@ -76,7 +76,7 @@ export default {
     components:{CategoryItem},
     data() {
 			return {				
-				sonatas:['Mozart: Allegro','Beethoven "Moonlight" Sonata','Chopin: Sonata No.3','J.S. Bach'],
+				sonatas:['Mozart: Allegro','Beethoven "Moonlight" Sonata','Chopin: Sonata No.3','J.S. Bach','Béla Bartók'],
 				collections:['Symphony','Sonata','Piano','Singing','Movie']
 			}
     },
@@ -116,6 +116,15 @@ export default {
 
     .sonata {
         margin-top: 3%;
+    }
+    .sonata li{
+        text-align: left; 
+        width: 85%;
+    }
+
+    .sonata li span{
+        position: relative;
+        left: 10%; 
     }
 
    h1,li {
