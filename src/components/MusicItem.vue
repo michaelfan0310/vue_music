@@ -1,6 +1,6 @@
 <template>
   <div>
-      <h1>My Favorite Album</h1>
+      
       <ul class="list">
             <li v-for="(c,index) in collections" :key="index"><span>{{c}}</span></li>           
       </ul>

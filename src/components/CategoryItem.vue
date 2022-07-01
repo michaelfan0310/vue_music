@@ -15,6 +15,9 @@
 </script>
 
 <style scoped>
+    iframe{
+        width:99%;
+    }
 	.categoryItem{
 		/* border-radius: 12px;
 		background-color: skyblue; */

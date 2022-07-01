@@ -8,4 +8,6 @@
 // };//上次忘记改subfolder为vue_music，失败很多次
 module.exports = {
   publicPath:  './',
+
 };
+
