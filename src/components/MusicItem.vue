@@ -4,10 +4,12 @@
       <ul class="list">
             <li v-for="(c,index) in collections" :key="index"><span>{{c}}</span></li>           
       </ul>
+      <div class="box3">
       <input type="text" v-model="newCollect"/>
       <button @click="addNew">add new</button>
+      </div>
       
-<div class="container">
+     <div class="container">
 
        
        <category-item title="Symphony" >
@@ -108,7 +110,7 @@ export default {
         flex-direction: row;
 		justify-content: space-around;
         flex-flow: row wrap;
-        margin: 3% 2%;
+        margin: 2% 2%;
 	}
     iframe{
         width:99%;
@@ -131,8 +133,11 @@ export default {
         color: rgb(142, 139, 135);
         
     }
+   .box3 {
+       position: static;
+   }
 
-    /* h1 {margin-top: -7%;} */
+  
  
 
 </style>

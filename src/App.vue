@@ -4,7 +4,7 @@
     <img alt="Music logo" src="./images/m_logo.png">
     <h1>My Favorite Album</h1>
 
-<div class="row">
+    <div class="row">
       <div class="col-xs-2 col-xs-offset-2">
         <div>
 					<!-- 原始html中我们使用a标签实现页面的跳转 -->
@@ -52,7 +52,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;  
+  margin-top: 80px;  
 }
 img { 
   margin-top:-2%;
@@ -65,12 +65,11 @@ img {
       width: 10%;
           }
 
-.list-group{
-  margin-right: 75%;
- 
-  color: skyblue;
-  /* font-size: 1.5rem; */
+.list-group{ 
+  margin-right: 75%; 
+  color: skyblue;  
   margin-left: 5%;
+  /* margin-top: 13%; */
 }
 html{  background-image: url('./images/bk1.jpg');}
 

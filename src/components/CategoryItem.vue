@@ -21,7 +21,7 @@
 	.categoryItem{
 		/* border-radius: 12px;
 		background-color: skyblue; */
-		width: 30%;
+		width: 29%;
 		height: 33%;
 		margin: 1%;
 	}

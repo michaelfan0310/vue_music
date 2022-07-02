@@ -3,29 +3,29 @@
 	<div>
      <h3>ENJOY YOUR TIME</h3>  
     <div class="container">   
-       <category-item title="Symphony" >
+       <category title="Symphony" >
 			<iframe src="https://www.youtube.com/embed/fij0ASrJiKk" title="YouTube video player" 
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</category-item>		
+		</category>		
 
-        <category-item title="Piano">
+        <category title="Piano">
 			<iframe   src="https://www.youtube.com/embed/hlWiI4xVXKY"   title="YouTube video player"
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
             picture-in-picture" allowfullscreen></iframe>
-		</category-item>
+		</category>
 
-		<category-item title="Movie">
+		<category title="Movie">
 			<iframe src="https://www.youtube.com/embed/mNIXRXikYDc" title="YouTube video player" 
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</category-item>  
+		</category>  
 
-		<category-item title="Movie">
+		<category title="Movie">
 			<iframe src="https://www.youtube.com/embed/nCSx2BWGBNM" title="YouTube video player" 
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</category-item> 
+		</category> 
         
   </div>
 
@@ -33,10 +33,10 @@
 </template>
 
 <script>
-    import CategoryItem from './CategoryItem'
+    // import CategoryItem from './CategoryItem'
 	export default {
 		name:'Entertainment',
-		components:[CategoryItem,]
+		// components:[CategoryItem,]
 		
 	}
 </script>
