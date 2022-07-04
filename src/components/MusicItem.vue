@@ -78,7 +78,7 @@ export default {
     components:{CategoryItem},
     data() {
 			return {				
-				sonatas:['Mozart: Allegro','Beethoven "Moonlight" Sonata','Chopin: Sonata No.3','J.S. Bach','Béla Bartók'],
+				sonatas:['Mozart: Allegro','Beethoven "Moonlight" Sonata','Chopin: Sonata No.3','J.S. Bach','Béla Bartók','Schumann'],
 				collections:['Symphony','Sonata','Piano','Singing','Movie']
 			}
     },
