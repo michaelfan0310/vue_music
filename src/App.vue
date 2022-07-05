@@ -1,8 +1,5 @@
 <template>
-  <div id="app">
-    <img class="michael_favicon" src="./images/favicon2.png" >
-    <img alt="Music logo" src="./images/m_logo.png">
-    <h1>My Favorite Album</h1>
+  <div id="app">    
 
     <div class="row">
       <div class="col-xs-2 col-xs-offset-2">
@@ -16,6 +13,7 @@
 					<router-link class="list-group" active-class="active" to="/Entertainment">Entertainment</router-link>
          
         </div>
+        <HeaderItem />
       </div>
       <div class="col-xs-6">
         <div class="panel">
@@ -26,7 +24,7 @@
         </div>
       </div>
     </div>
-
+    
    
     <MusicItem />
 
@@ -36,12 +34,14 @@
 
 <script>
 import MusicItem from './components/MusicItem.vue'
+import HeaderItem from './components/HeaderItem.vue'
 
 export default {
   name: 'App',
   components: {
-    MusicItem
-  }
+    MusicItem,
+    HeaderItem
+}
 }
 </script>
 
@@ -54,22 +54,13 @@ export default {
   color: #2c3e50;
   margin-top: 80px;  
 }
-img { 
-  margin-top:-2%;
-      /* margin-left: -50%; */
-      width: 18%;
-          }
- .michael_favicon{ 
-  margin-top:-3%;
-      /* margin-left: -50%; */
-      width: 10%;
-          }
+
 
 .list-group{ 
   margin-right: 75%; 
   color: skyblue;  
   margin-left: 5%;
-  /* margin-top: 13%; */
+  margin-top: -23%;
 }
 html{  background-image: url('./images/bk1.jpg');}
 

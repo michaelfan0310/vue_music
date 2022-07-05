@@ -1,9 +1,9 @@
 <template>
-	<div>
-        <div class="box1" >
-		<h4 >Week-Learning{{renew.Adding}}</h4> 
+	<div>        
         <button @click="addPlan">addPlan</button>
-        </div>
+		<h4 >Week-Learning{{renew.Adding}}</h4> 
+        
+      
     <div class="container2">   
 
 	<category >
@@ -18,11 +18,11 @@
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </category>  
 
-    <category  v-show="renew.shownew">
+    <category  v-show="renew.shownew" class="mask">
             <iframe  src="https://www.youtube.com/embed/eUnlOsylxyo"   title="YouTube video player" 
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </category>  
+    </category> 
         
   </div>
 
@@ -57,11 +57,12 @@
 <style scoped>
      h4{
         margin-top:-2%;
-        color: rgb(236, 228, 228);
+        color: rgb(88, 139, 169);
      }
      button{
-        margin-top:1%;
-        margin-right: 86%;
+        position: absolute;
+        margin-top:-6%;
+        margin-left: -40%;
      }
         
    
@@ -70,11 +71,17 @@
         flex-direction: row;
 		justify-content: space-around;
         flex-flow: row wrap;
-        margin-top: -17%;
+        margin-top: -1%;
 	}
     iframe{
         width:99%;
     }
+
+    /* .mask{
+    position: absolute;
+    top:0;bottom:0;left:0;right:0;
+    background-color: rgba(0, 0, 0, 0.75);
+} */
   
 
 
