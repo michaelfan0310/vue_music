@@ -43,7 +43,7 @@
 
 <style scoped>
 	h3{
-		margin-top:-2%;
+		margin-top:-1%;
 	}
         
 

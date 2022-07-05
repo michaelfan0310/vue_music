@@ -4,20 +4,32 @@
 		<h4 >Week-Learning{{renew.Adding}}</h4> 
         
       
-    <div class="container2">   
+    <div class="container2" v-show="!renew.shownew">   
 
-	<category >
+	<category class="category">
         <iframe src="https://www.youtube.com/embed/gyMwXuJrbJQ" title="YouTube video player" 
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </category>
 
-    <category >
+    <category class="category">
             <iframe src="https://www.youtube.com/embed/xBxx7aceR1U"   title="YouTube video player" 
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </category>  
+    </div>
+    <div class="container3" v-show="renew.shownew" >
+    <category class="category">
+        <iframe src="https://www.youtube.com/embed/gyMwXuJrbJQ" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </category>
 
+    <category class="category">
+            <iframe src="https://www.youtube.com/embed/xBxx7aceR1U"   title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </category> 
     <category  v-show="renew.shownew" class="mask">
             <iframe  src="https://www.youtube.com/embed/eUnlOsylxyo"   title="YouTube video player" 
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
@@ -37,7 +49,7 @@
         data(){
             return{
                 renew:{
-        shownew: false,
+                shownew: false,
         Adding:''
        
         }
@@ -56,7 +68,7 @@
 
 <style scoped>
      h4{
-        margin-top:-2%;
+        margin-top:-1%;
         color: rgb(88, 139, 169);
      }
      button{
@@ -71,7 +83,13 @@
         flex-direction: row;
 		justify-content: space-around;
         flex-flow: row wrap;
-        margin-top: -1%;
+        margin-top: -13%;
+	}
+    .container3{
+		display: flex;
+        flex-direction: row;
+		justify-content: space-around;
+        flex-flow: row wrap;       
 	}
     iframe{
         width:99%;
