@@ -62,7 +62,7 @@
      button{
         position: absolute;
         margin-top:-6%;
-        margin-left: -40%;
+        margin-left: -44.5%;
      }
         
    

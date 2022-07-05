@@ -16,8 +16,7 @@ export default {
 .michael_favicon{ 
           width: 10%;
           }
-img { 
-  margin-top:-6%;
+img {   
          width: 18%;
           }
  
